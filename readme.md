@@ -6,9 +6,9 @@
 
 I am using a multi-class outdoor weather classification dataset [(Multi-Class Weather Classification from Still Image Using Said Ensemble Method | IEEE Conference Publication | IEEE Xplore).](https://ieeexplore.ieee.org/document/8704783) It contains 1125 images and 4 classes: 'cloudy', 'sunrise', 'rain' and 'shine'. With distribution of classes as such: {'cloudy': 300, 'shine': 253, 'sunrise': 357, 'rain': 215}. 
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.001.jpeg)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.001.jpeg)
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.002.jpeg)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.002.jpeg)
 
 ### Data preprocessing:  
 
@@ -20,7 +20,7 @@ Looking at the sample images I thought that it might be a good idea to see if te
 
 Let’s look at the mean class distribution of these patterns:
 
-<img src="distributions.png" alt="drawing" width="560"/>
+<img src="readme_photos/distributions.png" alt="drawing" width="560"/>
 
 We can see that there are some differences present between the classes, it especially clear if we compare rain’s pattern distribution and cloudy’s pattern distribution. This will help the classifier to do its job. 
 
@@ -30,13 +30,13 @@ Experiments with this classifier will include picking different amount of neighb
 
 ### Results: 
 
-<img src="weather_knn_full.png" alt="drawing" width="200"/> <img src="weather_knn_half.png" alt="drawing" width="200"/>
+<img src="readme_photos/weather_knn_full.png" alt="drawing" width="200"/> <img src="readme_photos/weather_knn_half.png" alt="drawing" width="200"/>
 
 Row normalized confusion matrices: 
 
 &emsp; &emsp; &emsp;&emsp; k = 5, full data  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; k = 100, full data 
 
-<img src="confusionMatrix_k_5_full_data.png" alt="drawing" width="280"/> <img src="confusionMatrix_k_100_full_data.png" alt="drawing" width="280"/>
+<img src="readme_photos/confusionMatrix_k_5_full_data.png" alt="drawing" width="280"/> <img src="readme_photos/confusionMatrix_k_100_full_data.png" alt="drawing" width="280"/>
 
 ## Classifier #2, MLP: 
 
@@ -51,7 +51,7 @@ Row normalized confusion matrices:
 
 &emsp;Full data, hidden layer nodes = 512 &emsp;&emsp; Full data, hidden layer nodes = 10 
 
-<img src="confusionMatrix_512_full_dataset.png" alt="drawing" width="280"/>  <img src="full_data_10_confusionMatrix.png" alt="drawing" width="280"/> 
+<img src="readme_photos/confusionMatrix_512_full_dataset.png" alt="drawing" width="280"/>  <img src="readme_photos/full_data_10_confusionMatrix.png" alt="drawing" width="280"/> 
 
 
 ## Summary: 
@@ -66,7 +66,7 @@ In this experiment, kNN performed better than MLP. kNN approach was also faster,
 
 SMS Spam Collection v.1:[ \[PDF\] Contributions to the study of SMS spam filtering: new collection and results | Semantic Scholar.](https://www.semanticscholar.org/paper/Contributions-to-the-study-of-SMS-spam-filtering%3A-Almeida-Hidalgo/db6b56557d4b8c722e1fc504af4a361cfe1e22d8) This dataset consists of spam and non-spam SMS messages, labeled “spam” and “ham”. It contains 4,827 SMS legitimate messages (86.6%) and a total of 747 (13.4%) spam messages. 
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.012.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.012.png)
 
 ### Data preprocessing:  
 
@@ -82,13 +82,13 @@ Experiments with this classifier will include picking different alphas (0.00001,
 
 ### Results: 
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.013.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.014.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.015.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.016.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.013.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.014.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.015.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.016.png)
 
 Row normalized confusion matrices: 
 
 &emsp;&emsp;&emsp;&emsp;&emsp; Alpha = 1.0 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; Alpha = 100.0 
 
-<img src="confusionMatrix_alpha = 1.0.png" alt="drawing" width="280"/> <img src="confusionMatrix_alpha = 100.0.png" alt="drawing" width="280"/>
+<img src="readme_photos/confusionMatrix_alpha = 1.0.png" alt="drawing" width="280"/> <img src="readme_photos/confusionMatrix_alpha = 100.0.png" alt="drawing" width="280"/>
 
 ## Classifier #2, SVM: 
 
@@ -96,17 +96,17 @@ Experiments with this classifier will include picking different kernels (polynom
 
 ### Results: 
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.019.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.020.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.019.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.020.png)
 
 Row normalized confusion matrices: 
 
 &emsp;&emsp;&emsp; Radial kernel, full data   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    Radial kernel, half data  
 
-<img src="confusionMatrix_rbf_full_data.png" alt="drawing" width="280"/>  <img src="confusionMatrix_rbf_half_data.png" alt="drawing" width="280"/> 
+<img src="readme_photos/confusionMatrix_rbf_full_data.png" alt="drawing" width="280"/>  <img src="readme_photos/confusionMatrix_rbf_half_data.png" alt="drawing" width="280"/> 
 
 &emsp;&emsp; Polynomial kernel, full data    &emsp;&emsp; &emsp;&emsp; Polynomial kernel, half data  
 
-<img src="confusionMatrix_poly_full_data.png" alt="drawing" width="280"/>  <img src="confusionMatrix_poly_half_data.png" alt="drawing" width="280"/> 
+<img src="readme_photos/confusionMatrix_poly_full_data.png" alt="drawing" width="280"/>  <img src="readme_photos/confusionMatrix_poly_half_data.png" alt="drawing" width="280"/> 
 
 ## Summary: 
 
@@ -122,9 +122,9 @@ This dataset is about classifying positions occurring during the physical exerci
 
 &emsp;&emsp;&emsp;&emsp; Down position:                                  &emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           Up position: 
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.025.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.026.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.025.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.026.png)
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.027.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.028.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.027.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.028.png)
 
 ### Data preprocessing:  
 
@@ -134,7 +134,7 @@ Some of the images taken at night had to have a two-fold brightness increase for
 
 Google’s MediaPipe library for python was used to extract key body points from the images. Each image gives us 33 pairs of x and y coordinates of a human body parts’ relative position to each other. *Data augmentation* was also done by flipping the coordinates along the x axis. Thus making the dataset twice as big. 
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.029.jpeg)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.029.jpeg)
 
 <img src="body.png" alt="drawing"/> 
 
@@ -144,17 +144,17 @@ Experiments with this classifier will include picking different amount of neighb
 
 ### Results: 
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.031.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.032.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.033.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.034.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.031.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.032.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.033.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.034.png)
 
 Row normalized confusion matrices: 
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; k = 1                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   k = 3 
 
-<img src="confusionMatrix_k_1.png" alt="drawing" width="280"/>  <img src="confusionMatrix_k_3.png" alt="drawing" width="280"/> 
+<img src="readme_photos/confusionMatrix_k_1.png" alt="drawing" width="280"/>  <img src="readme_photos/confusionMatrix_k_3.png" alt="drawing" width="280"/> 
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; k = 5                   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;      k = 10 
 
-<img src="confusionMatrix_k_5.png" alt="drawing" width="280"/>  <img src="confusionMatrix_k_10.png" alt="drawing" width="280"/> 
+<img src="readme_photos/confusionMatrix_k_5.png" alt="drawing" width="280"/>  <img src="readme_photos/confusionMatrix_k_10.png" alt="drawing" width="280"/> 
 
 ## Classifier #2, SVM: 
 
@@ -162,17 +162,17 @@ Experiments with this classifier will include picking different kernels (polynom
 
 ### Results: 
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.039.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.040.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.039.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.040.png)
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.041.png) ![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.042.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.041.png) ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.042.png)
 
 &emsp;&emsp;&emsp;&emsp;&emsp; Radial kernel                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;         Polynomial kernel, degree = 1 
 
-<img src="confusionMatrix_rbf.png" alt="drawing" width="280"/>  <img src="confusionMatrix_poly_1.png" alt="drawing" width="280"/> 
+<img src="readme_photos/confusionMatrix_rbf.png" alt="drawing" width="280"/>  <img src="readme_photos/confusionMatrix_poly_1.png" alt="drawing" width="280"/> 
 
 &emsp;&emsp; Polynomial kernel, degree = 2     &emsp;&emsp;&emsp;        Polynomial kernel, degree = 3 
 
-<img src="confusionMatrix_poly_2.png" alt="drawing" width="280"/> <img src="confusionMatrix_poly_3.png" alt="drawing" width="280"/>
+<img src="readme_photos/confusionMatrix_poly_2.png" alt="drawing" width="280"/> <img src="readme_photos/confusionMatrix_poly_3.png" alt="drawing" width="280"/>
 
 ## Summary: 
 
