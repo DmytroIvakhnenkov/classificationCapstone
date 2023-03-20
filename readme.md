@@ -44,8 +44,8 @@ I will be using a 3-layer MLP: input, hidden, output. Training will be done with
 
 ### Results: 
 
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.008.png)
-![](Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.009.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.008.png)
+![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.009.png)
 
 Row normalized confusion matrices: 
 
@@ -136,7 +136,7 @@ Google’s MediaPipe library for python was used to extract key body points from
 
 ![](readme_photos/Aspose.Words.f0881697-bd48-48db-98aa-377f0d83e1c3.029.jpeg)
 
-<img src="body.png" alt="drawing"/> 
+<img src="readme_photos/body.png" alt="drawing"/> 
 
 ## Classifier #1, kNN: 
 
